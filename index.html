@@ -30,7 +30,7 @@
 
 		  <div class="titleMessage">
 		  	<div class="heading">
-		  		<p class="main"> Amro Bassbrain</p>
+		  		<p class="main">Amro Bassbrain</p>
 		  		<p class="sub t"></p>
 		  		
 		  	</div>
@@ -73,6 +73,9 @@
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link " href="#contact">contact</a>
+		  </li>
+		  <li class="nav-item">
+	        <a class="nav-link " href="#signin">Sign in</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -245,15 +248,82 @@
 	</div>
 	<div id="contact" class="contactSection section">
 
-		<div class="col-md-12 text-center">
+		<div class="container">
 
-			<p class="subHeading">Like what you see?</p>
-			<h2>I'd love to hear from you!</h2>
-			<a href="mailTo:basabrain.am@gmail.com" class="contactButton">GET IN TOUCH!</a>
+			<div class="form-group row justify-content-md-center" >
+				
+				<div class="col-md-5 text-center" style="padding: 0% 0px;">
+					<p class="subHeading">Like what you see?</p>
+					<h2>I'd love to hear from you!</h2>
+				</div>
+				
+				<div class="col-md-7">
+				  <div style="padding: 0% 10%;">
+					  <form action="" method="POST">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" minlength="3"></br>
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required></br>
+						<label for="phone">Enter your phone number:</label>
+						<input type="tel" class="form-control" id="phone" name="phone" required></br>
+						  <div class="form-group">
+							<label for="exampleFormControlTextarea1">Message</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" name="body" placeholder="Write something.." rows="5" required></textarea>
+						  </div>
+						<div style="  display: flex; justify-content: center; align-items: center;">
+						  <button type="button" class="btn btn-outline-light contactButton">Send</button>
+						</div>
+					  </form>
+					</div>
+				  </div>
+				</div>
+
 
 		</div>
 
 	</div>
+
+	<div id="signin" class="section">
+
+		<div class="container">
+
+
+				<div class="form-group row justify-content-md-center" >
+					<div class="col-md-6">
+					  <div style="padding: 0% 10%;">
+						<h3 style="text-align: center;">Sign in</h3>
+						  <form action="" method="POST">
+							
+								<label for="name">Full name</label>
+								<input type="text" class="form-control" id="name" name='name' minlength="3"  required> </br>
+
+								<label for="phone">Enter your phone number:</label>
+								<input type="tel" class="form-control" id="phone" name='phone' required> </br>
+
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" name='email'  aria-describedby="emailHelp" required> </br>
+
+								<label for="pass1">Password</label>
+								<input type="password" class="form-control" id="pass1" name='password' placeholder="6 characters atleast 1 uppercase letter,1 digit" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> </br>
+								
+								<label for="pass2">Re-enter your password</label>
+								<input type="password" class="form-control" id="pass2" placeholder="6 characters atleast 1 uppercase letter,1 digit" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+
+								<div style=" display: flex; justify-content: center; align-items: center; padding: 5% 0%;">
+								<button type="button" class="btn btn-outline-dark">Submit</button>
+
+						  </form>
+						</div>
+					  </div>
+					</div>
+					
+
+
+		</div>
+
+	</div>
+
+
 	<div id="portfolio" class="section">
 
 		<div class="container">
@@ -477,6 +547,10 @@
 
 		<div class="col-md-12 text-center">
 			<p>&copy; Copyright Amro Bassbrain 2020</p>
+			<p>Follow me</p>
+			<a href="https://twitter.com/"><i class='fab fa-twitter' style='font-size:20px; color: white;'></i></a>
+			<a href="https://www.instagram.com/"><i class='fab fa-instagram' style='font-size:20px; color: white;'></i></a>
+			<a href="https://www.snapchat.com/"><i class='fab fa-snapchat' style='font-size:20px; color: white;'></i></a>
 		</div>
 
 	</div>
