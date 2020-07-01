@@ -62,6 +62,7 @@ body {
 .titleMessage .heading .sub{
 	font-size: 23px;
 }
+/*   Emmet used  here to create  padding: 100px (p+100)*/
 .section {
 	padding: 100px 0;
 }
