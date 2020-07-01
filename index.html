@@ -1,3 +1,4 @@
+<!-- Emmet used here to create DOCTYPE (!+Enter) -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +42,7 @@
 
 
 
-
+		  <!-- Emmet used here -->
 		   <nav class="slides-navigation">
 		    <a href="#" class="next"></a>
 		    <a href="#" class="prev"></a>
@@ -85,7 +86,7 @@
 
 
 
-
+	<!-- Emmet user here -->
 	<div id="about" class="section">
 
 		<div class="container">
@@ -259,19 +260,19 @@
 				
 				<div class="col-md-7">
 				  <div style="padding: 0% 10%;">
-					  <form action="" method="POST">
+					  <form action="{{url_for('handle_email')}}" method="POST">
 						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" name="name" minlength="3"></br>
+						<input type="text" class="form-control" id="name" name="name_us" minlength="3"></br>
 						<label for="email">Email address</label>
-						<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required></br>
+						<input type="email" class="form-control" id="email" name="email_us" aria-describedby="emailHelp" required></br>
 						<label for="phone">Enter your phone number:</label>
-						<input type="tel" class="form-control" id="phone" name="phone" required></br>
+						<input type="tel" class="form-control" id="phone" name="phone_us" required></br>
 						  <div class="form-group">
 							<label for="exampleFormControlTextarea1">Message</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" name="body" placeholder="Write something.." rows="5" required></textarea>
+							<textarea class="form-control" id="exampleFormControlTextarea1" name="text_us" placeholder="Write something.." rows="5" required></textarea>
 						  </div>
 						<div style="  display: flex; justify-content: center; align-items: center;">
-						  <button type="button" class="btn btn-outline-light contactButton">Send</button>
+						  <button type="submit" class="btn btn-outline-light contactButton">Send</button>
 						</div>
 					  </form>
 					</div>
@@ -290,7 +291,8 @@
 
 				<div class="form-group row justify-content-md-center" >
 					<div class="col-md-6">
-					  <div style="padding: 0% 10%;">
+					  <!-- ABDULLAH STYLE -->
+						<div style="padding: 0% 10%;">
 						<h3 style="text-align: center;">Sign in</h3>
 						  <form action="" method="POST">
 							
